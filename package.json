@@ -1,0 +1,35 @@
+{
+  "name": "mercadolibre-bot",
+  "version": "1.0.0",
+  "description": "telegram bot",
+  "scripts": {
+    "start": "func start",
+    "start:dev": "node ./main/index.js",
+    "init": "node configure.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silverbryan/mercadolibrex-bot"
+  },
+  "keywords": [
+    "telegram",
+    "mercadolibre",
+    "bot",
+    "api mercadolibre",
+    "telegram bot",
+    "telegraf bot",
+    "telegram inline bot"
+  ],
+  "author": "@silverbryan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silverbryan/mercadolibrex-bot/issues"
+  },
+  "homepage": "https://silverbryan.com.ar",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {}
+}

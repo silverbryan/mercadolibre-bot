@@ -1,0 +1,1 @@
+module.exports = ({ reply }) => reply("Este bot fue contruido por @silverbryan puedes encontrar mas informacion accediendo a su pagina oficial https://silverbryan.com.ar")

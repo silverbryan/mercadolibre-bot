@@ -1,4 +1,4 @@
-name: deploy Node.js project to Azure Function App
+name: Deploy Node.js project to Azure Function App
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 
 env:
+  AZURE_FUNCTIONAPP_NAME: telegram-experimental
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'
   NODE_VERSION: '14.x'
 
@@ -15,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 'Checkout GitHub Action'
-      uses: actions/checkout@v2
+      uses: actions/checkout@master
 
     - name: Setup Node ${{ env.NODE_VERSION }} Environment
       uses: actions/setup-node@v1
@@ -33,7 +34,6 @@ jobs:
       uses: Azure/functions-action@v1
       id: fa
       with:
-        app-name: 'telegram-experimental'
-        slot-name: 'production'
+        app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4a0de9c3a6ff4d95bdf484005d422465 }}
+        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}

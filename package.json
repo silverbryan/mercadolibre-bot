@@ -4,7 +4,7 @@
   "description": "telegram bot",
   "scripts": {
     "start": "func start",
-    "start:dev": "node ./main/index.js",
+    "start:dev": "nodemon local.js",
     "init": "node configure.js"
   },
   "repository": {
@@ -31,5 +31,7 @@
     "dotenv": "^10.0.0",
     "telegraf": "^3.38.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

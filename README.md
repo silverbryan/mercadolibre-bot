@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/silverbryan/mercadolibre-bot/master/statics/telegram-bot-architecture-1.png" />
+</p>
+
 ## Running Locally
 
 -   Install Dependecies: `npm install`

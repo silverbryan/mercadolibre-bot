@@ -14,7 +14,7 @@ bot.context.app = utils;
 
 bot.command('/start', commands.start);
 bot.command('/about', commands.about);
-bot.command('/clear', commands.clear);
 bot.on('inline_query', actions.inlineQuery);
+bot.on('text', actions.linkChecker)
 
 module.exports = { bot };

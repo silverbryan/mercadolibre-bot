@@ -4,7 +4,7 @@
   "description": "telegram bot",
   "scripts": {
     "start": "func start",
-    "start:dev": "nodemon local.js",
+    "start:dev": "node local.js",
     "init": "node configure.js"
   },
   "repository": {
